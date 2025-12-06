@@ -11,6 +11,6 @@ router.put('/updateWorkout', auth, workoutController.updateWorkout);
 
 router.delete('/deleteWorkout', auth, workoutController.deleteWorkout);
 
-router.patch('/completeWorkoutStatus', auth, workoutController.completeWorkoutStatus);
+router.patch('/completeWorkoutStatus/:id', auth, workoutController.completeWorkoutStatus);
 
 module.exports = router;
