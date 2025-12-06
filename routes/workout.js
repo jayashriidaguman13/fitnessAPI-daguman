@@ -7,10 +7,10 @@ router.post('/addWorkout', auth, workoutController.addWorkout);
 
 router.get('/getMyWorkouts', auth, workoutController.getMyWorkouts);
 
-router.put('/updateWorkout/:id', auth, workoutController.updateWorkout);
+router.put('/updateWorkout', auth, workoutController.updateWorkout);
 
-router.delete('/deleteWorkout/:id', auth, workoutController.deleteWorkout);
+router.delete('/deleteWorkout', auth, workoutController.deleteWorkout);
 
-router.patch('/completeWorkoutStatus/:id', auth, workoutController.completeWorkoutStatus);
+router.patch('/completeWorkoutStatus', auth, workoutController.completeWorkoutStatus);
 
 module.exports = router;
